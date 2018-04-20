@@ -1,0 +1,68 @@
+<div class="card-body sizes animated bounceInDown">
+    
+    <section class="form-simple">
+
+        <!--Form with header-->
+        <div class="card">
+    
+            <!--Header-->
+            <div class="header pt-3 grey lighten-2">
+    
+                <div class="row d-flex justify-content-start animated pulse infinite">
+                    <h3 class="deep-grey-text mt-3 mb-4 pb-1 mx-5 ">Sign up</h3>
+                </div>
+    
+            </div>
+            <!--Header-->
+    
+            <div class="card-body mx-4 mt-4">
+    
+                <!--Body-->
+                <div class="md-form">
+                  <i class="fa fa-user prefix grey-text"></i>
+                  <input type="text" id="Form-email4" class="form-control" name="displayName" [(ngModel)]="displayName" placeholder="Name">
+                </div>
+
+                <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="email" id="Form-email4" class="form-control" name="email" [(ngModel)]="email" placeholder="Your email">
+                </div>
+    
+                <div class="md-form pb-3">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <input type="password" id="Form-pass4" class="form-control" name="password" [(ngModel)]="password" placeholder="Your password">
+                </div>
+
+                <div class=" admin">
+                  <i class="fa fa-circle prefix grey-text"></i>
+                  <label for="" class="adminchildren1">Admin</label>
+                  <div class="row adminchildren">
+                      <div class="form-check col-md-6">
+                          <input class="form-check-input" type="radio" [(ngModel)]="admin" name="admin" id="exampleRadiosInline1" value="true" checked>
+                          <label class="form-check-label" for="exampleRadiosInline1">
+                              Yes
+                          </label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="admin" [(ngModel)]="admin" id="exampleRadiosInline2" value="false">
+                          <label class="form-check-label" for="exampleRadiosInline2">
+                              No
+                          </label>
+                      </div>
+                  </div>
+                </div>
+                
+                
+                <div class="text-center mb-4">
+                    <button type="button" class="btn btn-primary btn-block z-depth-2 borderButton" (click)="onAdd()">Register</button>
+                </div>
+                <p class="font-small grey-text d-flex justify-content-center">Do you already have an account? <a href="#" class="dark-grey-text font-weight-bold ml-1" routerLink='/signin' routerLinkActive='active'> Sign in</a></p>
+    
+            </div>
+    
+        </div>
+        <!--/Form with header-->
+    
+    </section>
+            
+</div>
