@@ -8,19 +8,17 @@ import { Router } from '@angular/router';
   templateUrl: './homeadmin.component.html',
   styleUrls: ['./homeadmin.component.css']
 })
-export class HomeadminComponent implements OnInit {
-  
-  specialEvents = []
+export class HomeadminComponent implements OnInit {s
 
   constructor( private dataService:DataService,
   private _router:Router) { }
 
   ngOnInit() {
     this.dataService.getHome().subscribe(
-      res => this.specialEvents = res,
+      res => console.log(res.status),
       err => {
         if( err instanceof HttpErrorResponse ) {
-          if (err.status === 403) {
+          if (err.status === 401) {
             this._router.navigate(['/signin'])
           }
         }

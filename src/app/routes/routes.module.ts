@@ -7,9 +7,9 @@ import { HomeadminComponent } from '../homeadmin/homeadmin.component';
 import { AuthGuard } from '../auth/auth.guard';
 
 const routes: Routes = [
-  {   path : '', 
-      redirectTo:'/signin', 
-      pathMatch : 'full'
+  { path : '', 
+    redirectTo:'/signin', 
+    pathMatch : 'full'
   },
   {
     path: 'home',
@@ -17,12 +17,12 @@ const routes: Routes = [
     component: HomeadminComponent
   },
   {
-      path: 'signin', 
-      component: SigninComponent      
+    path: 'signin', 
+    component: SigninComponent      
   },
   {
-      path: 'signup', 
-      component: SignupComponent
+    path: 'signup', 
+    component: SignupComponent
   }
 
 ];
